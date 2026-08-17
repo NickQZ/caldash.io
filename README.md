@@ -91,9 +91,16 @@ The main application is structured as follows:
     - dashboard.php
       
 - assets/
+   - images/
 -  css/
+   - style.css
 -  js/
+   - script.js
 -  includes/
+   - auth.php
+   - footer.php
+   - header.php
+   - navbar.php
 -  config/
     -  database.php
 - database/
@@ -130,12 +137,12 @@ http://localhost/phpmyadmin/
 
 In phpMyAdmin:
 
-Select the Import tab.
-Click Choose File.
-Select:
-database/caldash.sql
-Click Go.
-Wait for the import to complete.
+ - Select the Import tab.
+ - Click Choose File.
+ - Select:
+ - database/caldash.sql
+ - Click Go.
+ - Wait for the import to complete.
 Confirm that the caldash database and required tables have been created.
 
 The SQL script contains the database structure, relationships and initial/sample food data.
@@ -165,12 +172,12 @@ If a dedicated MySQL application user is configured, use those credentials inste
 
 After completing the installation steps:
 
-Start WAMP Server.
-Confirm that the WAMP icon is green.
-Confirm that Apache and MySQL are running.
-Confirm that the CalDash database has been imported.
-Confirm that the database credentials in config/database.php are correct.
-Open a modern web browser.
+ - Start WAMP Server.
+ - Confirm that the WAMP icon is green.
+ - Confirm that Apache and MySQL are running.
+ - Confirm that the CalDash database has been imported.
+ - Confirm that the database credentials in config/database.php are correct.
+ - Open a modern web browser.
 
 Navigate to:
 
@@ -184,24 +191,24 @@ From the home page, a new user can register for an account and then log in to ac
 
 After logging in, the main MVP functionality can be tested through the following process:
 
-Register a new user account.
-Log in using the registered account.
-Open the meal logging functionality.
-Select a meal type such as Breakfast, Lunch, Dinner or Snack.
-Search for a food.
-Select a food from the available results.
-Enter the quantity or serving amount.
-Save the meal entry.
-View the nutritional information on the dashboard.
-Open meal history to view previously recorded meals.
-Edit or delete an existing meal entry.
+ - Register a new user account.
+ - Log in using the registered account.
+ - Open the meal logging functionality.
+ - Select a meal type such as Breakfast, Lunch, Dinner or Snack.
+ - Search for a food.
+ - Select a food from the available results.
+ - Enter the quantity or serving amount.
+ - Save the meal entry.
+ - View the nutritional information on the dashboard.
+ - Open meal history to view previously recorded meals.
+ - Edit or delete an existing meal entry.
 
 The dashboard displays the user's daily nutritional intake, including:
 
-Calories
-Protein
-Carbohydrates
-Fat
+ - Calories
+ - Protein
+ - Carbohydrates
+ - Fat
 
 ## 8. Database Configuration
 
@@ -226,21 +233,21 @@ Foods
 
 Stores food information including:
 
-Food name
-Calories
-Protein
-Carbohydrates
-Fat
-Serving size
-Meal Entries
+ - Food name
+ - Calories
+ - Protein
+ - Carbohydrates
+ - Fat
+ - Serving size
+ - Meal Entries
 
 Stores food consumed by users, including:
 
-User
-Food
-Meal type
-Quantity
-Date/time logged
+ - User
+ - Food
+ - Meal type
+ - Quantity
+ - Date/time logged
 
 Security: Real passwords or sensitive database credentials should not be included in publicly accessible source control repositories.
 
@@ -249,55 +256,56 @@ CalDash Does Not Load
 
 Check that:
 
-WAMP Server is running.
-The WAMP icon is green.
-Apache is running.
-The CalDash folder is located inside the WAMP www directory.
-index.php exists in the CalDash root directory.
-The browser is accessing:
+ - WAMP Server is running.
+ - The WAMP icon is green.
+ - Apache is running.
+ - The CalDash folder is located inside the WAMP www directory.
+ - index.php exists in the CalDash root directory.
+ - The browser is accessing:
 http://localhost/caldash/
+
 Database Connection Error
 
 Check that:
 
-MySQL is running.
-The caldash database exists in phpMyAdmin.
-The database username is correct.
-The database password is correct.
-The database name is caldash.
-config/database.php contains the correct connection details.
-The configured database user has appropriate privileges.
-Page Shows a PHP Error
+ - MySQL is running.
+ - The caldash database exists in phpMyAdmin.
+ - The database username is correct.
+ - The database password is correct.
+ - The database name is caldash.
+ - config/database.php contains the correct connection details.
+ - The configured database user has appropriate privileges.
+ - Page Shows a PHP Error
 
 Check that:
 
-PHP is installed and enabled in WAMP.
-The PHP version is compatible with the application.
-The project files have been copied correctly.
-PHP file paths are correct.
-Required include files exist.
-config/database.php is correctly configured.
-Database Import Error
+ - PHP is installed and enabled in WAMP.
+ - The PHP version is compatible with the application.
+ - The project files have been copied correctly.
+ - PHP file paths are correct.
+ - Required include files exist.
+ - config/database.php is correctly configured.
+ - Database Import Error
 
 Check that:
 
-MySQL is running.
-The correct database/caldash.sql file has been selected.
-The SQL file has not been modified incorrectly.
-The database user has permission to create the required database and tables.
+ - MySQL is running.
+ - The correct database/caldash.sql file has been selected.
+ - The SQL file has not been modified incorrectly.
+ - The database user has permission to create the required database and tables.
 
 ## 10. Development Environment
 
 CalDash was developed and tested using the following environment:
 
-Component	Version / Environment
-Operating System	Windows
-Web Server	Apache 2.4.65
-PHP	8.3.28
-Database	MySQL
-Database Management	phpMyAdmin
-Development Environment	WAMP Server
-Code Editor	Visual Studio Code
+ - Component	Version / Environment
+ - Operating System	Windows
+ - Web Server	Apache 2.4.65
+ - PHP	8.3.28
+ - Database MySQL
+ - Database Management	phpMyAdmin
+ - Development Environment	WAMP Server
+ - Code Editor	Visual Studio Code
 
 The application was designed to operate as a local web application for the purposes of the BIT701 IT Project.
 
@@ -306,34 +314,35 @@ Included in the MVP
 
 The CalDash MVP includes:
 
-User registration
-User login and logout
-Meal logging
-Breakfast, lunch, dinner and snack categories
-Food searching
-Food selection
-Quantity/serving entry
-Nutritional information tracking
-Daily calorie tracking
-Daily protein tracking
-Daily carbohydrate tracking
-Daily fat tracking
-Meal history
-Editing meals
-Deleting meals
-Responsive web interface
+ - User registration
+ - User login and logout
+ - Meal logging
+ - Breakfast, lunch, dinner and snack categories
+ - Food searching
+ - Food selection
+ - Quantity/serving entry
+ - Nutritional information tracking
+ - Daily calorie tracking
+ - Daily protein tracking
+ - Daily carbohydrate tracking
+ - Daily fat tracking
+ - Meal history
+ - Editing meals
+ - Deleting meals
+ - Responsive web interface
+
 Outside the Scope of the MVP
 
 The following features were intentionally excluded from the MVP:
 
-Barcode scanning
-AI meal recommendations
-Social networking
-Recipe generation
-Advanced analytics
-Native Android/iOS applications
-External hosting
-Personal nutritional goal tracking
+ - Barcode scanning
+ - AI meal recommendations
+ - Social networking
+ - Recipe generation
+ - Advanced analytics
+ - Native Android/iOS applications
+ - External hosting
+ - Personal nutritional goal tracking
 
 These features were excluded to maintain an achievable project scope and allow the core CalDash functionality to be developed and tested within the available project timeframe.
 
