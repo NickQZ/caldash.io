@@ -5,14 +5,14 @@ CalDash.io is a responsive web-based nutrition tracking application developed as
 
 The application allows users to:
 
-Register and log in
-Record meals and food consumption
-Search and select foods
-Enter food quantities or servings
-View nutritional information
-Monitor daily calories, protein, carbohydrates and fat
-Review their meal history
-Edit and delete meal entries
+- Register and log in
+- Record meals and food consumption
+- Search and select foods
+- Enter food quantities or servings
+- View nutritional information
+- Monitor daily calories, protein, carbohydrates and fat
+- Review their meal history
+- Edit and delete meal entries
 
 The application was developed as a local web application using PHP, MySQL, HTML, CSS, JavaScript and Bootstrap.
 
@@ -20,62 +20,62 @@ The application was developed as a local web application using PHP, MySQL, HTML,
 
 The following software is required to run CalDash locally:
 
-Windows operating system
-WAMP Server
-Apache 2.4.65 or compatible version
-PHP 8.3 or compatible version
-MySQL
-phpMyAdmin
-Modern web browser such as:
-Google Chrome
-Microsoft Edge
-Mozilla Firefox
+- Windows operating system
+- WAMP Server
+- Apache 2.4.65 or compatible version
+- PHP 8.3 or compatible version
+- MySQL
+- phpMyAdmin
+- Modern web browser such as:
+- Google Chrome
+- Microsoft Edge
+- Mozilla Firefox
 
 CalDash was developed and tested using WAMP Server on Windows.
 
 ## 2. Technologies Used
-Front-End
-HTML5
-CSS3
-JavaScript
-Bootstrap
-Back-End
-PHP 8.3.28
-Apache 2.4.65
-Database
-MySQL
-phpMyAdmin
-Development Tools
-Visual Studio Code
-WAMP Server
-Git / GitHub
-Excalidraw for database and ERD design
+- Front-End
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap
+- Back-End
+- PHP 8.3.28
+- Apache 2.4.65
+- Database
+- MySQL
+- phpMyAdmin
+- Development Tools
+- Visual Studio Code
+- WAMP Server
+- Git / GitHub
+- Excalidraw for database and ERD design
 
 ## 3. Included Artefacts
 
 The submission contains the following project artefacts.
 
-Application Code
-PHP application files
-HTML markup
-CSS files
-JavaScript files
-Images and other assets
-PHP include files
-Database configuration files
-Database
-SQL database schema
-Database relationships
-Initial/sample food data
-Database setup script
-Documentation
-Project documentation
-Entity Relationship Diagram (ERD)
-Testing documentation
-Weekly project journals
-Final reflection
-Other assessment artefacts required for BIT701 Assessment 3
-README
+- Application Code
+- PHP application files
+- HTML markup
+- CSS files
+- JavaScript files
+- Images and other assets
+- PHP include files
+- Database configuration files
+- Database
+- SQL database schema
+- Database relationships
+- Initial/sample food data
+- Database setup script
+- Documentation
+- Project documentation
+- Entity Relationship Diagram (ERD)
+- Testing documentation
+- Weekly project journals
+- Final reflection
+- Other assessment artefacts required for BIT701 Assessment 3
+- README
 
 This README provides instructions for installing, configuring and running CalDash locally.
 
@@ -83,23 +83,21 @@ This README provides instructions for installing, configuring and running CalDas
 
 The main application is structured as follows:
 
-caldash/
-│
-├── index.php
-├── login.php
-├── register.php
-├── dashboard.php
-│
-├── assets/
-├── css/
-├── js/
-├── includes/
-│
-├── config/
-│   └── database.php
-│
-└── database/
-    └── caldash.sql
+- caldash/
+
+    - index.php
+    - login.php
+    - register.php
+    - dashboard.php
+      
+- assets/
+-  css/
+-  js/
+-  includes/
+-  config/
+    -  database.php
+- database/
+   - caldash.sql
 
 The database/caldash.sql file contains the SQL required to create the CalDash database structure and populate the initial food data.
 
