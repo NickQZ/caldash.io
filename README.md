@@ -1,5 +1,5 @@
-## CalDash.io
-# BIT701 Assessment 3
+# CalDash.io
+## BIT701 Assessment 3
 
 CalDash.io is a responsive web-based nutrition tracking application developed as part of the BIT701 IT Project.
 
@@ -16,7 +16,7 @@ Edit and delete meal entries
 
 The application was developed as a local web application using PHP, MySQL, HTML, CSS, JavaScript and Bootstrap.
 
-# 1. System Requirements
+## 1. System Requirements
 
 The following software is required to run CalDash locally:
 
@@ -33,7 +33,7 @@ Mozilla Firefox
 
 CalDash was developed and tested using WAMP Server on Windows.
 
-# 2. Technologies Used
+## 2. Technologies Used
 Front-End
 HTML5
 CSS3
@@ -51,7 +51,7 @@ WAMP Server
 Git / GitHub
 Excalidraw for database and ERD design
 
-# 3. Included Artefacts
+## 3. Included Artefacts
 
 The submission contains the following project artefacts.
 
@@ -79,7 +79,7 @@ README
 
 This README provides instructions for installing, configuring and running CalDash locally.
 
-# 4. Project Structure
+## 4. Project Structure
 
 The main application is structured as follows:
 
@@ -103,7 +103,7 @@ caldash/
 
 The database/caldash.sql file contains the SQL required to create the CalDash database structure and populate the initial food data.
 
-# 5. Installation
+## 5. Installation
 Step 1 — Install and Start WAMP
 
 Install WAMP Server on the development computer.
@@ -163,7 +163,7 @@ The database username and password may need to be changed depending on the local
 
 If a dedicated MySQL application user is configured, use those credentials instead of the root account.
 
-# 6. Running CalDash
+## 6. Running CalDash
 
 After completing the installation steps:
 
@@ -182,7 +182,7 @@ The CalDash home page should load.
 
 From the home page, a new user can register for an account and then log in to access the application.
 
-# 7. Using the Application
+## 7. Using the Application
 
 After logging in, the main MVP functionality can be tested through the following process:
 
@@ -205,7 +205,7 @@ Protein
 Carbohydrates
 Fat
 
-# 8. Database Configuration
+## 8. Database Configuration
 
 CalDash uses MySQL to store application data.
 
@@ -246,7 +246,7 @@ Date/time logged
 
 Security: Real passwords or sensitive database credentials should not be included in publicly accessible source control repositories.
 
-# 9. Troubleshooting
+## 9. Troubleshooting
 CalDash Does Not Load
 
 Check that:
@@ -288,7 +288,7 @@ The correct database/caldash.sql file has been selected.
 The SQL file has not been modified incorrectly.
 The database user has permission to create the required database and tables.
 
-# 10. Development Environment
+## 10. Development Environment
 
 CalDash was developed and tested using the following environment:
 
@@ -303,7 +303,7 @@ Code Editor	Visual Studio Code
 
 The application was designed to operate as a local web application for the purposes of the BIT701 IT Project.
 
-11. Project Scope
+## 11. Project Scope
 Included in the MVP
 
 The CalDash MVP includes:
@@ -339,10 +339,10 @@ Personal nutritional goal tracking
 
 These features were excluded to maintain an achievable project scope and allow the core CalDash functionality to be developed and tested within the available project timeframe.
 
-# 12. Project Completion
+## 12. Project Completion
 
 Once the installation and configuration steps have been completed, CalDash can be accessed locally through:
 
 http://localhost/caldash/
 
-# The application is intended to demonstrate the completed MVP functionality developed for the BIT701 Assessment 3 project.
+## The application is intended to demonstrate the completed MVP functionality developed for the BIT701 Assessment 3 project.
