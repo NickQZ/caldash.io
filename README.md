@@ -63,12 +63,10 @@ The submission contains the following project artefacts.
 - Images and other assets
 - PHP include files
 - Database configuration files
-- Database
 - SQL database schema
 - Database relationships
 - Initial/sample food data
 - Database setup script
-- Documentation
 - Project documentation
 - Entity Relationship Diagram (ERD)
 - Testing documentation
@@ -89,22 +87,23 @@ The main application is structured as follows:
     - login.php
     - register.php
     - dashboard.php
-      
-- assets/
-   - images/
--  css/
-   - style.css
--  js/
-   - script.js
--  includes/
-   - auth.php
-   - footer.php
-   - header.php
-   - navbar.php
--  config/
-    -  database.php
-- database/
-   - caldash.sql
+    - add_meal.php
+    - logout.php
+    - assets/
+       - images/
+    -  css/
+       - style.css
+    -  js/
+       - script.js
+    -  includes/
+       - auth.php
+       - footer.php
+       - header.php
+       - navbar.php
+    -  config/
+        -  database.php
+    - database/
+       - caldash.sql
 
 The database/caldash.sql file contains the SQL required to create the CalDash database structure and populate the initial food data.
 
@@ -141,7 +140,8 @@ In phpMyAdmin:
  - Click Choose File.
  - Select:
  - database/caldash.sql
- - Click Go.
+ - Click Open.
+ - Scroll down, click Import
  - Wait for the import to complete.
 Confirm that the caldash database and required tables have been created.
 
