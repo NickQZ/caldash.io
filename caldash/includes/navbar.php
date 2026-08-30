@@ -25,14 +25,14 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="add_meal.php">
-                        Add Meal
+                    <a class="nav-link" href="meal_history.php">
+                        Meal History
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="meal_history.php">
-                        Meal History
+                    <a class="nav-link" href="Profile.php">
+                        Profile
                     </a>
                 </li>
 
