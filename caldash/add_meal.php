@@ -28,13 +28,24 @@ if (!isset($meal_types[$meal])) {
 
 $meal_type = $meal_types[$meal];
 
-
 // Add meal to database
 if (isset($_POST['add_meal'])) {
 
     $food_id = $_POST['food_id'];
     $quantity = $_POST['quantity'];
 
+    // Get food name for success message
+    $food_sql = "SELECT food_name FROM FOOD WHERE food_id = ?";
+    $food_stmt = $conn->prepare($food_sql);
+    $food_stmt->bind_param("i", $food_id);
+    $food_stmt->execute();
+
+    $food_result = $food_stmt->get_result();
+    $food_data = $food_result->fetch_assoc();
+
+    $food_name = $food_data['food_name'] ?? 'Food';
+
+    // Insert meal
     $sql = "
         INSERT INTO MEAL_ENTRY
         (
@@ -56,12 +67,23 @@ if (isset($_POST['add_meal'])) {
         $quantity
     );
 
-    $stmt->execute();
+    // Execute ONCE
+    if ($stmt->execute()) {
 
-    header("Location: dashboard.php");
-    exit();
+        // Store success message for dashboard
+        $_SESSION['success_message'] = $food_name . " added!";
+        $_SESSION['success_meal'] = $meal_type;
+
+        header("Location: dashboard.php");
+        exit();
+    } else {
+
+        // Optional error message
+        $_SESSION['error_message'] = "Unable to add food.";
+        header("Location: dashboard.php");
+        exit();
+    }
 }
-
 
 // Search for food
 $search = trim($_GET['search'] ?? '');
