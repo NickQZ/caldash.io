@@ -2,6 +2,8 @@
 session_start();
 require_once "config/database.php";
 
+global $conn;
+
 if (!isset($_SESSION['user_id'])) {
     header("Location: login.php");
     exit();
@@ -62,11 +64,24 @@ while ($meal_row = $result->fetch_assoc()) {
 }
 ?>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CalDash</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
 <div class="container py-5">
 
-    <div class="text-center text-md-start mb-4">
+    <div class="dashboard-heading mb-4">
         <h2>Today's Nutrition</h2>
-        <p class="text-muted mb-0"><?php echo date("d/m/Y"); ?></p>
+        <p><?php echo date("l, d F Y"); ?></p>
     </div>
 
     <div class="card mb-4">
