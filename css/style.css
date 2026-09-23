@@ -1,0 +1,326 @@
+/* ==============================
+   CalDash Theme
+   ============================== */
+
+:root {
+  --primary: #3f8f63;
+  --primary-dark: #1d3e2a;
+  --background: #f6f8f7;
+  --surface: #fff;
+  --text: #18231d;
+  --muted: #718078;
+  --border: #e2e8e4;
+  --blue: #4f7cac;
+  --orange: #d99532;
+  --purple: #8064a2;
+}
+
+/* Base */
+
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+.navbar {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar-brand {
+  color: var(--primary);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+  color: var(--primary);
+}
+
+.nav-link {
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* Layout */
+
+.dashboard {
+  max-width: 1120px;
+  padding-top: 40px !important;
+}
+
+.dashboard-heading {
+  margin-bottom: 25px;
+}
+
+.dashboard-heading h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.dashboard-heading p {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* Cards */
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+/* Calories */
+
+.calories-card {
+  border-left: 4px solid var(--primary);
+}
+
+.calories-card .card-body {
+  min-height: 90px;
+}
+
+.calories-card h2 {
+  font-size: 1.55rem;
+  font-weight: 700;
+}
+
+/* Nutrition */
+
+.nutrition-card {
+  min-height: 115px;
+}
+
+.nutrition-card h6 {
+  margin-bottom: 6px;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.nutrition-card h4 {
+  margin: 0;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.nutrition-card.carbs {
+  border-top: 3px solid var(--blue);
+}
+
+.nutrition-card.carbs h4 {
+  color: var(--blue);
+}
+
+.nutrition-card.fat {
+  border-top: 3px solid var(--orange);
+}
+
+.nutrition-card.fat h4 {
+  color: var(--orange);
+}
+
+.nutrition-card.protein {
+  border-top: 3px solid var(--purple);
+}
+
+.nutrition-card.protein h4 {
+  color: var(--purple);
+}
+
+/* Meals */
+
+.meals-title {
+  margin-bottom: 18px;
+  color: var(--text);
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.meal-card {
+  min-height: 250px;
+  display: flex;
+}
+
+.meal-card .card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.meal-card h5 {
+  margin-bottom: 18px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.meal-card .food-name {
+  margin-bottom: 6px !important;
+  color: var(--text);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.meal-card .nutrition-info {
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+.meal-card .text-muted {
+  color: var(--muted) !important;
+}
+
+/* Success message */
+
+.meal-success {
+  margin: 8px 0 12px;
+  padding: 8px 10px;
+  background: #e8f5ed;
+  color: var(--primary-dark);
+  border: 1px solid #c8e6d2;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: center;
+  animation: success-in 0.3s ease;
+}
+
+@keyframes success-in {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Buttons */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+}
+
+.btn-dark {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-dark:hover {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+.btn-outline-dark {
+  background: var(--surface);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.btn-outline-dark:hover {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+.meal-card .btn {
+  width: 100%;
+  margin-top: auto;
+}
+
+.bottom-buttons .btn {
+  min-height: 46px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    align-items: flex-end;
+  }
+
+  .navbar-nav .nav-link {
+    text-align: right;
+  }
+
+  .dashboard {
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+  }
+
+  .dashboard-heading {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .dashboard-heading h2 {
+    font-size: 1.5rem;
+  }
+
+  .dashboard-heading p {
+    font-size: 0.85rem;
+  }
+
+  .calories-card .card-body {
+    min-height: 80px;
+  }
+
+  .calories-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .nutrition-row {
+    --bs-gutter-x: 8px;
+  }
+
+  .nutrition-card {
+    min-height: 100px;
+  }
+
+  .nutrition-card h6 {
+    font-size: 0.65rem;
+  }
+
+  .nutrition-card h4 {
+    font-size: 1.35rem;
+  }
+
+  .meals-title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .meal-card {
+    min-height: 220px;
+  }
+
+  .meal-card h5 {
+    font-size: 0.95rem;
+  }
+
+  .meal-card .food-name {
+    font-size: 0.85rem;
+  }
+
+  .meal-card .nutrition-info {
+    font-size: 0.7rem;
+  }
+
+  .bottom-buttons {
+    margin-top: 22px !important;
+  }
+}
