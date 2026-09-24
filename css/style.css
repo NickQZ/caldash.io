@@ -13,6 +13,7 @@
   --blue: #4f7cac;
   --orange: #d99532;
   --purple: #8064a2;
+  --red: #dc3545;
 }
 
 /* Base */
@@ -43,6 +44,10 @@ body {
 .nav-link {
   color: var(--text);
   font-weight: 500;
+}
+
+.logout-link:hover {
+  color: var(--red) !important;
 }
 
 /* Layout */
